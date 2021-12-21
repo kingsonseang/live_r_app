@@ -134,8 +134,14 @@ class _Member1State extends State<Member1> {
               const Divider(
                 color: Colors.transparent,
               ), // give spave between top and bottom
+              //
+              // dislikes heading contianer
+              //
               const Align(
                 alignment: Alignment.topLeft,
+                //
+                // dislikes heading
+                //
                 child: Text(
                   'DISLIKES',
                   style: TextStyle(
@@ -149,8 +155,14 @@ class _Member1State extends State<Member1> {
               const Divider(
                 color: Colors.transparent,
               ),
+              //
+              // dislikes row
+              //
               Row(
                 children: [
+                  //
+                  // dislike 1
+                  //
                   Container(
                     child: Column(
                       children: [
@@ -171,6 +183,12 @@ class _Member1State extends State<Member1> {
                       ],
                     ),
                   ),
+                  //
+                  // dislike 1
+                  //
+                  //
+                  // dislike 2
+                  //
                   Container(
                     margin: const EdgeInsets.only(left: 20.0),
                     child: Column(
@@ -192,6 +210,9 @@ class _Member1State extends State<Member1> {
                       ],
                     ),
                   ),
+                  //
+                  // dislike 2
+                  //
                 ],
               ),
               const Spacer(), // give as much possible space between top and bottom

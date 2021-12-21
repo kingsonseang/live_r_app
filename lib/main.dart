@@ -3,7 +3,7 @@ import 'SplashScreen.dart';
 
 void main() {
   runApp(
-    MaterialApp(
+    const MaterialApp(
       // hide the debug banner
       debugShowCheckedModeBanner: false,
       // move to the splash screen on load

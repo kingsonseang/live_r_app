@@ -44,6 +44,9 @@ class LiverDiseasePageState extends State<LiverDiseasePage> {
                     scrollDirection: Axis.vertical,
                     child: Column(
                       children: <Widget>[
+                        //
+                        // copy here for image
+                        //
                         Container(
                           width: MediaQuery.of(context).size.width,
                           height: MediaQuery.of(context).size.height * 0.25,
@@ -54,7 +57,13 @@ class LiverDiseasePageState extends State<LiverDiseasePage> {
                             ),
                           ),
                         ),
+                        //
+                        // to here for image
+                        //
                         const Divider(),
+                        //
+                        // copy from here for heading with underline
+                        //
                         Container(
                           padding: const EdgeInsets.only(
                             bottom: 2.5, // Space between underline and text
@@ -76,6 +85,12 @@ class LiverDiseasePageState extends State<LiverDiseasePage> {
                             ),
                           ),
                         ),
+                        //
+                        // copy to here for heading with underline
+                        //
+                        //
+                        // copy from here for text descr
+                        //
                         // text descr
                         const Text(
                           '    The liver plays an important role in many bodily functions from protein production and blood clotting to cholesterol, glucose (sugar), and iron metabolism.',
@@ -84,8 +99,15 @@ class LiverDiseasePageState extends State<LiverDiseasePage> {
                             fontFamily: 'Century Gothic',
                           ),
                         ),
+                        //
+                        // copy to here for text descr
+                        //
                         const Divider(), // give spave between top and bottom
-                        // header text
+                        //
+                        //
+                        // header text without underline
+                        //
+                        //
                         const Text(
                           'What Causes Liver Disease?',
                           style: TextStyle(
@@ -93,6 +115,12 @@ class LiverDiseasePageState extends State<LiverDiseasePage> {
                             fontFamily: 'Century Gothic',
                           ),
                         ),
+                        //
+                        // header text without underline
+                        //
+                        //
+                        // text description
+                        //
                         const Text(
                           '     Many diseases and conditions can affect the liver, for example, certain drugs like excessive amounts of acetaminophen, and acetaminophen combination medications like Vicodin and Norco, as well as statins, cirrhosis, alcohol abuse, hepatitis A, B, C, D, and E, infectious mononucleosis (Epstein Barr virus), nonalcoholic fatty liver disease (NASH), and iron overload (hemochromatosis).',
                           style: TextStyle(
@@ -100,7 +128,13 @@ class LiverDiseasePageState extends State<LiverDiseasePage> {
                             fontFamily: 'Century Gothic',
                           ),
                         ),
+                        //
+                        // text description ends
+                        //
                         const Divider(), // give spave between top and bottom
+                        //
+                        // copy from here for heading with underline
+                        //
                         Container(
                           padding: const EdgeInsets.only(
                             bottom: 2.5, // Space between underline and text
@@ -121,6 +155,12 @@ class LiverDiseasePageState extends State<LiverDiseasePage> {
                             ),
                           ),
                         ),
+                        //
+                        // copy to here for heading with underline
+                        //
+                        //
+                        // copy from here for text desc
+                        //
                         const Text(
                           '     Many diseases and conditions can affect the liver, for example, certain drugs like excessive amounts of acetaminophen, and acetaminophen combination medications like Vicodin and Norco, as well as statins, cirrhosis, alcohol abuse, hepatitis A, B, C, D, and E, infectious mononucleosis (Epstein Barr virus), nonalcoholic fatty liver disease (NASH), and iron overload (hemochromatosis).',
                           style: TextStyle(
@@ -128,6 +168,9 @@ class LiverDiseasePageState extends State<LiverDiseasePage> {
                             fontFamily: 'Century Gothic',
                           ),
                         ),
+                        //
+                        // copy to here for text desc
+                        //
                         const Divider() // give spave between top and bottom
                       ],
                     ),
