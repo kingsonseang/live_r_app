@@ -1,6 +1,9 @@
+// first page the user sees after splash screen
+// holds the profile page and home page in it
+
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:live_r_app/defaultPage.dart';
+import 'package:live_r_app/HomePageData.dart';
 import 'package:live_r_app/my_flutter_app_icons.dart';
 import 'package:live_r_app/profile.dart';
 
@@ -15,7 +18,7 @@ class _HomePageState extends State<HomePage> {
   int index = 0;
   final navigationKey = GlobalKey<CurvedNavigationBarState>();
   final screens = [
-    const DefaultPage(),
+    const HomePageData(),
     const ProfilePage(),
   ];
 
@@ -74,7 +77,6 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-
 
 // SafeArea(
 //         child: Padding(

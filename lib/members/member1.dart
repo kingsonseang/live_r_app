@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:live_r_app/GroupMembers.dart';
+import 'package:live_r_app/members/GroupMembers.dart';
 // ignore: import_of_legacy_library_into_null_safe, library_prefixes
 // url launcher to use a sort of achor <a></a> tag
 import 'package:url_launcher/url_launcher.dart' as UrlLauncher;
 
-class Profile extends StatefulWidget {
-  const Profile({Key? key}) : super(key: key);
+// change class name to member<int> eg Member2
+class Member1 extends StatefulWidget {
+  const Member1({Key? key}) : super(key: key);
 
+// change state name to member<int>state eg Member2State
   @override
-  _ProfileState createState() => _ProfileState();
+  _Member1State createState() => _Member1State();
 }
 
-class _ProfileState extends State<Profile> {
+class _Member1State extends State<Member1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -213,6 +215,7 @@ class _ProfileState extends State<Profile> {
                 child: TextButton(
                   onPressed: () {
                     // using the url launcher
+                    // for phone number
                     UrlLauncher.launch(('tel:${precious.phone}'));
                   },
                   child: Container(
@@ -225,6 +228,8 @@ class _ProfileState extends State<Profile> {
                 height: 45.0,
                 child: TextButton(
                   onPressed: () {
+                    // using the url launcher
+                    // for email
                     UrlLauncher.launch(('mailto:${precious.email}'));
                   },
                   child: Container(

@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:live_r_app/homepage.dart';
+import 'package:live_r_app/liverDisease.dart';
 import 'package:page_transition/page_transition.dart';
 
-class DefaultPage extends StatefulWidget {
-  const DefaultPage({Key? key}) : super(key: key);
+class HomePageData extends StatefulWidget {
+  const HomePageData({Key? key}) : super(key: key);
 
   @override
-  _DefaultPageState createState() => _DefaultPageState();
+  _HomePageDataState createState() => _HomePageDataState();
 }
 
-class _DefaultPageState extends State<DefaultPage> {
+class _HomePageDataState extends State<HomePageData> {
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -36,8 +36,9 @@ class _DefaultPageState extends State<DefaultPage> {
             SizedBox(
               width: MediaQuery.of(context).size.width * 0.8,
               // text
+              //
               child: const Text(
-                'data',
+                'data', // describe the project.....
                 style: TextStyle(
                   color: Colors.white,
                   fontFamily: 'Century Gothic',
@@ -64,7 +65,7 @@ class _DefaultPageState extends State<DefaultPage> {
                       context,
                       // page transition to liver disease page
                       PageTransition(
-                        child: const Home(),
+                        child: const LiverDiseasePage(),
                         type: PageTransitionType.fade,
                         duration: const Duration(milliseconds: 500),
                       ),

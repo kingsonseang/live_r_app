@@ -1,6 +1,8 @@
+// all group members in grid view
+
 import 'package:flutter/material.dart';
-import 'package:live_r_app/GroupMembers.dart';
-import 'package:live_r_app/member1.dart';
+import 'package:live_r_app/members/GroupMembers.dart';
+import 'package:live_r_app/members/member1.dart';
 import 'package:page_transition/page_transition.dart';
 
 class ProfilePage extends StatefulWidget {
@@ -38,6 +40,9 @@ class _ProfilePageState extends State<ProfilePage> {
               shrinkWrap: true, // shrink items to fit
               children: [
                 // button to member description
+                //
+                //duplicate form here for new member
+                //
                 TextButton(
                   onPressed: () {
                     // navigator function
@@ -45,7 +50,13 @@ class _ProfilePageState extends State<ProfilePage> {
                       context,
                       // page transition to member detials page
                       PageTransition(
-                        child: const Profile(),
+                        //
+                        //
+                        // change child to new member file class
+                        // eg Member2() from member2.dart
+                        //
+                        //
+                        child: const Member1(),
                         // transition type
                         type: PageTransitionType.fade,
                         // transition duration
@@ -78,6 +89,9 @@ class _ProfilePageState extends State<ProfilePage> {
                     ],
                   ),
                 ),
+                //
+                // to here for new member
+                //
               ],
             ),
           ),
