@@ -3,6 +3,7 @@
 
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:live_r_app/HomePageData.dart';
 import 'package:live_r_app/my_flutter_app_icons.dart';
 import 'package:live_r_app/profile.dart';
@@ -56,6 +57,14 @@ class _HomePageState extends State<HomePage> {
             ),
             extendBody: true,
             appBar: AppBar(
+              systemOverlayStyle: SystemUiOverlayStyle(
+                // Status bar color
+                statusBarColor: Color(0xff011A2D), // For both Android + iOS
+                // Status bar brightness (optional)
+                statusBarIconBrightness:
+                    Brightness.light, // For Android (dark icons)
+                statusBarBrightness: Brightness.dark, // For iOS (dark icons)
+              ),
               title: const Text(
                 'LIVE R',
                 style: TextStyle(
