@@ -216,9 +216,9 @@ class _Member1State extends State<Member1> {
                 ],
               ),
               const Spacer(), // give as much possible space between top and bottom
-              const Align(
+              Container(
                 alignment: Alignment.topLeft,
-                child: Text(
+                child: const Text(
                   'CONTACT',
                   style: TextStyle(
                     fontWeight: FontWeight.w700,

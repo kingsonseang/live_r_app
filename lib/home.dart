@@ -57,7 +57,7 @@ class _HomePageState extends State<HomePage> {
             ),
             extendBody: true,
             appBar: AppBar(
-              systemOverlayStyle: SystemUiOverlayStyle(
+              systemOverlayStyle: const SystemUiOverlayStyle(
                 // Status bar color
                 statusBarColor: Color(0xff011A2D), // For both Android + iOS
                 // Status bar brightness (optional)
