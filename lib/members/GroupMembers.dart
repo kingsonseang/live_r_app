@@ -25,6 +25,15 @@ var precious = Member(
   phone: '+2345678901234',
 );
 
+// create an instance of the class
+var amaka = Member(
+  image: 'image/amaka.jpg',
+  name: 'Chukwuemeka Chiamaka',
+  about: 'Hi, I am Chukwuemeka Chiamaka. I am a student of Lincoln College of Science, Management and Tecnology January Intake. I contributed to this project by designing the mock up of the project and implementing the home page.',
+  email: 'amibaby411@gmial.com',
+  phone: '+234 706 907 7858',
+);
+
 // var nichole = Member(
 //   image: 'images/liverDiagram.png',
 //   name: 'Nichole Momoh',

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'SplashScreen.dart';
 
 void main() {
+
   runApp(
     const MaterialApp(
       // hide the debug banner

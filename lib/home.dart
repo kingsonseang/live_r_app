@@ -57,13 +57,14 @@ class _HomePageState extends State<HomePage> {
             ),
             extendBody: true,
             appBar: AppBar(
-              systemOverlayStyle: const SystemUiOverlayStyle(
+              systemOverlayStyle: SystemUiOverlayStyle(
                 // Status bar color
                 statusBarColor: Color(0xff011A2D), // For both Android + iOS
                 // Status bar brightness (optional)
-                statusBarIconBrightness:
-                    Brightness.light, // For Android (dark icons)
+                statusBarIconBrightness: Brightness.light, // For Android (dark icons)
                 statusBarBrightness: Brightness.dark, // For iOS (dark icons)
+                systemNavigationBarColor: Color(0xff011A2D), // Navigation bar
+                systemNavigationBarIconBrightness: Brightness.light,
               ),
               title: const Text(
                 'LIVE R',

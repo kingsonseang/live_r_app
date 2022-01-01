@@ -1,4 +1,5 @@
 //  linking page animation package
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
 import 'package:page_transition/page_transition.dart';
 // linking animated splash screen package
@@ -29,6 +30,7 @@ class _SplashState extends State<Splash> {
           statusBarBrightness: Brightness.dark, // For iOS (dark icons)
         ),
         toolbarHeight: 0,
+        elevation: 0,
       ),
       body: AnimatedSplashScreen(
         // the splash image
@@ -41,6 +43,43 @@ class _SplashState extends State<Splash> {
         splashTransition: SplashTransition.fadeTransition,
         // fade out
         pageTransitionType: PageTransitionType.fade,
+      ),
+    );
+  }
+}
+
+class Spl extends StatelessWidget {
+  const Spl({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Expanded(
+      flex: 1,
+      child: Stack(
+        alignment: AlignmentDirectional.center,
+        children: [
+          Image.asset(
+            'images/logo.png',
+          ),
+          Positioned(
+            bottom: 0,
+            left: 0,
+            child: RichText(
+              text: const TextSpan(
+                text: 'Powered by',
+                style: TextStyle(
+                  color: Colors.black,
+                ),
+                children: <TextSpan>[
+                  TextSpan(
+                    text: 'Lincoln',
+                    style: TextStyle(color: Colors.red),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }

@@ -27,6 +27,7 @@ flutter:
 
   assets:
     - images/
+    - image/
 
   fonts:
     - family: Caesar

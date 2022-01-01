@@ -31,14 +31,16 @@ class _HomePageDataState extends State<HomePageData> {
                 ),
               ),
             ),
-            const Divider(),
-            // text contianer
+            const Divider(
+              color: Colors.transparent,
+            ),
+            // text container
             SizedBox(
-              width: MediaQuery.of(context).size.width * 0.8,
+              width: MediaQuery.of(context).size.width * 0.89,
               // text
               //
               child: const Text(
-                'data', // describe the project.....
+                """Hi, this is a project done by the members of group liver disease for CSE 231 project\n\nIn this application, we would be looking at some common liver diseases that are experienced by members of our society and their known treatments.\n\nI hope that you would find it beneficial. """, // describe the project.....
                 style: TextStyle(
                   color: Colors.white,
                   fontFamily: 'Century Gothic',

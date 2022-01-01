@@ -5,6 +5,8 @@ import 'package:live_r_app/members/GroupMembers.dart';
 import 'package:live_r_app/members/member1.dart';
 import 'package:page_transition/page_transition.dart';
 
+import 'members/amaka.dart';
+
 class ProfilePage extends StatefulWidget {
   const ProfilePage({Key? key}) : super(key: key);
 
@@ -43,6 +45,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 //
                 //duplicate form here for new member
                 //
+                // test participannt
                 TextButton(
                   onPressed: () {
                     // navigator function
@@ -90,6 +93,54 @@ class _ProfilePageState extends State<ProfilePage> {
                   ),
                 ),
                 //
+                // amaka
+                //
+                TextButton(
+                  onPressed: () {
+                    // navigator function
+                    Navigator.push(
+                      context,
+                      // page transition to member detials page
+                      PageTransition(
+                        //
+                        //
+                        // change child to new member file class
+                        // eg Member2() from member2.dart
+                        //
+                        //
+                        child: const Amaka(),
+                        // transition type
+                        type: PageTransitionType.fade,
+                        // transition duration
+                        duration: const Duration(milliseconds: 500),
+                      ),
+                    );
+                  },
+                  // colum to hold te member image and name
+                  child: Column(
+                    children: [
+                      // member image in circle
+                      CircleAvatar(
+                        radius: 40.0,
+                        backgroundImage: AssetImage(
+                          amaka.image, // member image from class member
+                        ),
+                      ),
+                      const Divider(
+                        color: Colors.transparent,
+                      ), // give spave between top and bottom
+                      // member name
+                      Text(
+                        // member name from class member
+                        amaka.name,
+                        style: const TextStyle(
+                          color: Colors.white,
+                          fontFamily: 'Century Gothic',
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
                 // to here for new member
                 //
               ],
